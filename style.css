@@ -1,0 +1,255 @@
+  /* Apply the "SF Pro" font family to the entire website */
+  * {
+      font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  /* Style the body with a white background and black text */
+  body {
+      background-color: white;
+      color: black;
+  }
+
+  /* Style the headings with a medium gray color */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+      color: #636363;
+  }
+
+  /* Style the links with the Apple blue color */
+  a {
+      color: #007AFF;
+      text-decoration: none;
+  }
+
+  /* Style the buttons with the Apple blue color and a white background */
+  button {
+      background-color: #007AFF;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+  }
+
+  /* Add hover effect to buttons */
+  button:hover {
+      background-color: #0062CC;
+  }
+
+  /* Style the navigation bar with a white background and black text */
+  .navbar {
+      background-color: white;
+      color: black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+  }
+
+  /* Style the navigation items with a medium gray color */
+  .nav-item {
+      color: #636363;
+      margin-right: 10px;
+  }
+
+  /* Style the hero section with a light gray background and white text */
+  .hero {
+      background-color: #CCCCCC;
+      color: white;
+      text-align: center;
+      padding: 50px;
+  }
+
+  /* Style the content sections with a white background and black text */
+  .content {
+      background-color: white;
+      color: black;
+      padding: 120px;
+  }
+
+  #section-1 {
+      background-color: #F5F5F5;
+      /* Set the background color to #F5F5F5 */
+  }
+
+
+  /* Style the footer with a medium gray background and white text */
+  .footer {
+      background-color: #636363;
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+
+  h1 {
+      font-size: 34px;
+  }
+
+  h2 {
+      font-size: 28px;
+  }
+
+  h3 {
+      font-size: 22px;
+  }
+
+  h4 {
+      font-size: 20px;
+  }
+
+  p {
+      font-size: 17px;
+  }
+
+  button {
+      font-size: 17px;
+      font-weight: bold;
+  }
+
+  .footer {
+      background-color: #1A1A1A;
+      color: white;
+      font-size: 17px;
+      padding: 120px;
+  }
+
+  .footer-funnel-1 {
+      color: white;
+      text-decoration: none;
+  }
+
+  .footer-funnel-2 {
+      color: white;
+      text-decoration: none;
+  }
+
+  .footer-funnel-3 {
+      color: white;
+      text-decoration: none;
+  }
+
+  .footer-funnel-4 {
+      color: white;
+      text-decoration: none;
+  }
+
+  .footer-funnel a:hover {
+      color: white;
+      text-decoration: underline;
+  }
+
+  .logo {
+      float: left;
+      padding: 10px;
+  }
+
+  .logo img {
+      width: 50px;
+      height: 50px;
+  }
+
+  .nav-item {
+      display: inline-block;
+      margin-left: 10px;
+  }
+
+  .nav-item:hover {
+      font-weight: bold;
+      /* Make the text bold on hover */
+  }
+
+  .hero {
+      height: 300px;
+
+      background-image: url("hero-bg.jpg");
+      /* Set the background image */
+      background-size: cover;
+      /* Make the background image cover the entire section */
+      background-position: center;
+      /* Position the background image in the center */
+      the entire section */ background-position: center;
+      /* Position the background image in the center */
+      display: flex;
+      /* Enable flexbox layout */
+      align-items: center;
+      /* Align the items to the center */
+      justify-content: center;
+      /* Center the items horizontally and vertically */
+  }
+
+  @media only screen and (max-width: 600px) {
+      .navbar .nav-items {
+          display: none;
+          /* Hide the navigation items on mobile devices */
+      }
+
+      .navbar .menu-icon {
+          display: block;
+          /* Show the menu icon on mobile devices */
+      }
+  }
+
+  .menu-icon {
+      display: none;
+      /* Hide the menu icon on larger screens */
+  }
+
+
+  /*Mobile*/
+  .navbar .nav-items {
+      display: flex;
+      /* Display the navigation items as flex */
+      align-items: center;
+      /* Align the navigation items to the center */
+      justify-content: flex-end;
+      /* Align the navigation items to the right */
+      margin-right: 12px;
+      /* Set margin right for each navigation item */
+      font-weight: normal;
+      /* Set font weight to normal */
+      transition: all 0.2s ease-in-out;
+      /* Add a transition effect */
+  }
+
+  .navbar .nav-item:hover {
+      font-weight: bold;
+      /* Change font weight to bold on hover */
+  }
+
+  @media only screen and (max-width: 600px) {
+      .navbar .nav-items {
+          display: none;
+          /* Hide the navigation items on mobile devices */
+      }
+
+      .navbar .menu-icon {
+          display: block;
+          /* Show the menu icon on mobile devices */
+      }
+
+      .nav-items.show {
+          display: block;
+          /* Show the navigation items when the class "show" is added */
+          position: fixed;
+          /* Make the navigation items fixed */
+          top: 0;
+          /* Position the navigation items at the top of the screen */
+          left: 0;
+          /* Position the navigation items at the left of the screen */
+          width: 100%;
+          /* Make the navigation items full screen width */
+          height: 100%;
+          /* Make the navigation items full screen height */
+          background-color: #fff;
+          /* Set the background color */
+          z-index: 1;
+          /* Set the z-index to display the navigation items on top of other elements */
+          flex-direction: column;
+          /* Change the flex direction to column */
+          align-items: flex-start;
+          /* Align the navigation items to the left */
+          justify-content: flex-start;
+          /*
